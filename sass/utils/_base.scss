@@ -1,0 +1,39 @@
+body {
+    font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        color: $main-color;
+        background-color: $main-background-color;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}

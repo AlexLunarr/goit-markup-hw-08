@@ -1,0 +1,46 @@
+.footer {
+    background-color: $background-color-one;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__content {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address {
+    width: 231px;
+    margin-right: 70px;
+}
+
+.footer__emblem {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.address {
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.address__item {
+    color: $color-logo-three;
+}
+
+.address__item:nth-child(-n + 2) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    text-decoration: none;
+    color: $color-mail;
+    transition: color $time $cubic;
+    &:hover,
+    &:focus {color: $color-hover;
+}
+}
