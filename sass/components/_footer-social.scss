@@ -1,20 +1,46 @@
-.call {
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+ 
 
-    margin-bottom: 20px;
+    @media screen and (min-width: 768px){
+        .social {margin-left: auto;}}
+    @media screen and (min-width: 1200px) {
+            .social {
+                        margin-left: 70px;
+                    }
+                }
+                    
 
-    color: $color-logo-three;
-}
+                
+
+    .call {
+            display: block;
+            text-align: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    
+            margin-bottom: 20px;
+    
+            color: $color-logo-three;
+            @media screen and (min-width: 1200px) {
+                text-align: start;                
+            }
+        }
+
+
+
 
 .footer__social {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+    
+
 }
 
 .footer__link {

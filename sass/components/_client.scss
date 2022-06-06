@@ -17,11 +17,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    @media screen and (max-width: 1199px) {
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+}
+@media screen and (max-width: 1199px) {
+    .client__item {
+            margin: 15px;
+        }
 }
 
-.client__item {
-    & + & {margin-left: 30px;}    
+@media screen and (min-width: 1200px) {
+    .client__item {
+            &+& {
+                margin-left: 30px;
+            }
+        }
 }
+
 
 .client__link {
     display: flex;
@@ -30,7 +45,7 @@
     color: $background-color-icon;
     border: 1px solid $background-color-icon;
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 92px;
 
     transition: color $time $cubic,
@@ -41,6 +56,16 @@
         color: $color-hover;
         border-color: $color-hover;
     }
+
+         @media screen and (min-width: 768px) {
+             width: 226px;
+             height: 92px;
+         }
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+                height: 92px;
+        }
+
 }
 
 .client__icon {

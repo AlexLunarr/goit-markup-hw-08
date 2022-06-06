@@ -11,7 +11,8 @@
 }
 .modal__form {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    width: 100%;  
 }
 .modal__form-field {
     display: flex;
@@ -49,6 +50,8 @@
 }
 .form-field__thumb {
     position: relative;
+    
+    
     
 }
 
@@ -106,10 +109,6 @@ transition: border-color $time $cubic;
 
     margin-bottom: 30px;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 
     display: flex;
     flex-direction: row;

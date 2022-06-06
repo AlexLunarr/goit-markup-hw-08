@@ -13,22 +13,39 @@
     letter-spacing: 0.03em;
 }
 
-.team__list {
-    display: flex;
-    margin: -15px;
+@media screen and (min-width: 768px) {
+    .team__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
 }
 
+ @media screen and (min-width: 480px) and (max-width: 767px) {
+    .team__item + .team__item{
+        margin-top : 30px;
+    }
+ }
 .team__item {
     background-color: $main-background-color;
-    width: 270px;
-    margin: 15px;
-    padding-bottom: 30px;
+    max-width: 450px;
+    padding-bottom: 24px;
     letter-spacing: 0.03em;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
+
+    
+    @media screen and (min-width: 768px) {
+            width: 354px;
+            margin: 15px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            width: 270px;
+            padding-bottom: 30px;
+}}
 
 .team__foto {
     margin-bottom: 30px;
