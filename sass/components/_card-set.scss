@@ -2,19 +2,22 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -1 * $margin-portfolio-item;
-    margin-top: -1 * $margin-portfolio-item;
+    margin-top: 40px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin-left: -1 * $margin-portfolio-item;
+    // margin-top: -1 * $margin-portfolio-item;
 }
 
 
 
 .portfolio__item {
-    flex-basis: $var;
-    margin-left: $margin-portfolio-item;
-    margin-top: $margin-portfolio-item;
+
+    //     flex-basis: $var;
+    //     margin-left: $margin-portfolio-item;
+    &:not(:first-child) {
+        margin-top: $margin-portfolio-item;
+    }
 
     border: $color-border solid 1px;
 }
@@ -39,18 +42,18 @@
     transition: transform $time $cubic,
         opacity $time $cubic;
 
-        height: 100%;
-            display: block;
-            padding-left: 24px;
-            padding-right: 24px;
-            padding-top: 63px;
-            padding-bottom: 63px;
-        
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 1.56;
-            letter-spacing: 0.03em;
-            color: $color-button-one;
+    height: 100%;
+    display: block;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 63px;
+    padding-bottom: 63px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $color-button-one;
 }
 
 
@@ -58,10 +61,11 @@
     text-decoration: none;
     display: block;
     transition: box-shadow $time $cubic;
+
     &:hover,
     &:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
+            1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 }
 
