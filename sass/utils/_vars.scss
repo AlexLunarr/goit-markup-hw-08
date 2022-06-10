@@ -17,4 +17,5 @@ $margin-portfolio-item: 30px;
 $background-color-icon: #afb1b8;
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 $time: 250ms;
-$var: calc(100% / 3 - 30px)
+$var: calc((100% - 3 * 30px)/ 3);
+$varpl: calc((100% - 2 * 30px) / 2);

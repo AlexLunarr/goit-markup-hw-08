@@ -1,26 +1,32 @@
 .modal__call {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
 
     margin-bottom: 30px;
 
     color: #212121;
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
+
 .modal__form {
     display: flex;
-    flex-direction: column;  
-    width: 100%;  
+    flex-direction: column;
+    width: 100%;
 }
+
 .modal__form-field {
     display: flex;
     flex-direction: column;
 
     cursor: pointer;
 
-    
+
 
     font-weight: 400;
     font-size: 12px;
@@ -33,26 +39,30 @@
 .modal__form-field:hover .modal__icon {
     fill: $color-hover;
 }
+
 .modal__form-field:focus-within .form-input,
 .modal__form-field:hover .form-input {
     border-color: $color-hover;
 }
+
 .modal__form-field:focus-within .form__textarea,
 .modal__form-field:hover .form__textarea {
     border-color: $color-hover;
 }
 
-.modal__form-field:not(:first-child)         {
+.modal__form-field:not(:first-child) {
     margin-top: 12px;
 }
+
 .form-field__text {
     margin-bottom: 4px;
 }
+
 .form-field__thumb {
     position: relative;
-    
-    
-    
+
+
+
 }
 
 .modal__icon {
@@ -62,22 +72,24 @@
     left: 11px;
     transition: fill $time $cubic;
 }
+
 .form-input {
     width: 100%;
     height: 40px;
 
-    
-    
+
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    
+
     padding-left: 42px;
     outline: none;
-    
+
     cursor: inherit;
-transition: border-color $time $cubic;
+    transition: border-color $time $cubic;
 
 }
+
 .form__textarea {
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -95,6 +107,11 @@ transition: border-color $time $cubic;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
 
     color: rgba(117, 117, 117, 0.5);
 }
@@ -115,6 +132,12 @@ transition: border-color $time $cubic;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
 }
 
 .checkbox__input {
@@ -134,7 +157,7 @@ transition: border-color $time $cubic;
 .checkbox__icon {
     display: inline-block;
     margin-right: 7px;
-    width: 16px;
+    min-width: 16px;
     height: 15px;
     border: 2px solid $main-color;
     border-radius: 4px;
@@ -146,15 +169,15 @@ transition: border-color $time $cubic;
 .checkbox__link {
     text-decoration: none;
     color: $color-logo-two;
-    
+
     border-bottom: 0.7px solid currentColor;
     display: inline-block;
     line-height: 0.82;
-   
+
 }
 
-.checkbox__input:checked + .checkbox__icon {
-    
+.checkbox__input:checked+.checkbox__icon {
+
     background-color: $background-color-button;
     border-color: $background-color-button;
     background-image: url(../images/icon-check.svg);
@@ -162,12 +185,12 @@ transition: border-color $time $cubic;
     background-origin: border-box;
 }
 
-.checkbox__input:focus + .checkbox__icon,
-.checkbox__input:hover + .checkbox__icon {
+.checkbox__input:focus+.checkbox__icon,
+.checkbox__input:hover+.checkbox__icon {
     border-color: $background-color-button;
 }
 
 .modal__button {
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }

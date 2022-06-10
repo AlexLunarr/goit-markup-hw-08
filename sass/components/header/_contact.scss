@@ -40,18 +40,24 @@
         align-items: center;
 
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 12px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         color: $color-text;
         text-decoration: none;
 
-        // padding-top: 32px;
-        // padding-bottom: 32px;
+
         padding-top: 5px;
         padding-bottom: 5px;
 
         transition: color $time $cubic;
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.14;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
 
     .contact__link {

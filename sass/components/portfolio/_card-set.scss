@@ -3,20 +3,35 @@
     padding: 0;
     margin: 0;
     margin-top: 40px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // margin-left: -1 * $margin-portfolio-item;
-    // margin-top: -1 * $margin-portfolio-item;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -1 * $margin-portfolio-item;
+        margin-top: -1 * $margin-portfolio-item;
+    }
+
 }
 
 
 
 .portfolio__item {
-
-    //     flex-basis: $var;
-    //     margin-left: $margin-portfolio-item;
-    &:not(:first-child) {
+    @media screen and (min-width: 768px) {
+        flex-basis: $varpl;
+        margin-left: $margin-portfolio-item;
         margin-top: $margin-portfolio-item;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: $var;
+        margin-left: $margin-portfolio-item;
+    }
+
+    @media screen and (max-width: 767px) {
+        &:not(:first-child) {
+            margin-top: $margin-portfolio-item;
+        }
+
     }
 
     border: $color-border solid 1px;
