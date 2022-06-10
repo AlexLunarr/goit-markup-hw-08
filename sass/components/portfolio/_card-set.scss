@@ -43,7 +43,8 @@
 }
 
 .portfolio__overlay {
-    display: block;
+    display: flex;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -61,21 +62,33 @@
     display: block;
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 63px;
-    padding-bottom: 63px;
+    padding-top: auto;
+    padding-bottom: auto;
+
+    @media screen and (min-width:375px) {
+
+        padding-top: 63px;
+        padding-bottom: 63px;
+
+
+    }
 
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: $color-button-one;
+
 }
+
+
 
 
 .portfolio__link {
     text-decoration: none;
     display: block;
     transition: box-shadow $time $cubic;
+
 
     &:hover,
     &:focus {
