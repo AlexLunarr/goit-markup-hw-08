@@ -1026,22 +1026,47 @@ img {
   color: #2196F3;
 }
 
-.menu-social__item {
-  display: inline-block;
-  padding-left: 10px;
+@media screen and (max-width: 454px) {
+  .menu-social__link {
+    width: 90px;
+  }
+}
+
+.menu-social__link:first-child {
   padding-right: 10px;
 }
 
-.menu-social__item + .menu-social__item {
+.menu-social__link:last-child {
+  padding-left: 10px;
   border-left: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.menu-social__item:first-child {
-  padding-left: 0;
+.menu-social__item {
+  display: inline-block;
 }
 
-.menu-social__item:last-child {
-  padding-right: 0;
+@media screen and (max-width: 454px) {
+  .menu-social__item:first-child {
+    padding-bottom: 5px;
+  }
+  .menu-social__item:last-child .menu-social__link {
+    padding-top: 5px;
+  }
+}
+
+@media screen and (min-width: 455px) {
+  .menu-social__item {
+    display: inline-block;
+  }
+  .menu-social__item + .menu-social__item {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .menu-social__item:first-child {
+    padding-right: 10px;
+  }
+  .menu-social__item:last-child {
+    padding-left: 10px;
+  }
 }
 
 .hero {
