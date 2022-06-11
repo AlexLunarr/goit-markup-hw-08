@@ -83,11 +83,15 @@
     border-radius: 50%;
 
     background: #ffffff;
-    transition: fill $time $cubic;
+    transition: color $time $cubic;
     cursor: pointer;
 
     &:hover,
     &:focus {
-        fill: $color-hover;
+        color: $color-hover;
     }
+}
+
+.modal__closing {
+    fill: currentColor;
 }
