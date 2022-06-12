@@ -50,7 +50,7 @@
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../images/hero-tab@2x.jpg),
+                url(../images/hero-tab@2x.jpg  ),
                 linear-gradient(to right,
                     $background-color-one,
                     $background-color-one);
@@ -60,6 +60,7 @@
         }
     }
 
+    // Десктоп
     @media screen and (min-width: 768.1px) {
 
         height: 400px;
@@ -82,12 +83,11 @@
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../images/img-hero@2x.jpg),
+                url(../images/img-hero@2x.jpg ),
                 linear-gradient(to right,
                     $background-color-one,
                     $background-color-one);
             background-color: $background-color-one ;
-
 
         }
     }
