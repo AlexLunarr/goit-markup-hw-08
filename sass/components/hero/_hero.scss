@@ -1,19 +1,132 @@
-.hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    height: 400px;
+// .hero {
+//     padding-top: 118px;
+//     padding-bottom: 118px;
+//     height: 400px;
 
-    @media screen and (max-width: 480px) {
-        width: 100%;
-        max-width: 480px;
+//     @media screen and (max-width: 480px) {
+//         width: 100%;
+//         max-width: 480px;
+//         background-image: linear-gradient(to right,
+//                 rgba(47, 48, 58, 0.4),
+//                 rgba(47, 48, 58, 0.4)),
+//             url('../images/hero-sm.jpg'),
+//             linear-gradient(to right,
+//                 $background-color-one,
+//                 $background-color-one);
+//         background-color: $background-color-one ;
+
+//         @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             background-image: linear-gradient(to right,
+//                     rgba(47, 48, 58, 0.4),
+//                     rgba(47, 48, 58, 0.4)),
+//                 url(' ../images/hero-sm@2x.jpg '),
+//                 linear-gradient(to right,
+//                     $background-color-one,
+//                     $background-color-one);
+//             background-color: $background-color-one ;
+
+
+//         }
+//     }
+
+//     @media screen and (min-width: 481px) and (max-width: 768px) {
+
+//         width: 100%;
+//         max-width: 768px;
+//         background-image: linear-gradient(to right,
+//                 rgba(47, 48, 58, 0.4),
+//                 rgba(47, 48, 58, 0.4)),
+//             url('../images/hero-tab.jpg'),
+//             linear-gradient(to right,
+//                 $background-color-one,
+//                 $background-color-one);
+//         background-color: $background-color-one ;
+
+//         @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             background-image: linear-gradient(to right,
+//                     rgba(47, 48, 58, 0.4),
+//                     rgba(47, 48, 58, 0.4)),
+//                 url('../images/hero-tab@2x.jpg'),
+//                 linear-gradient(to right,
+//                     $background-color-one,
+//                     $background-color-one);
+//             background-color: $background-color-one ;
+
+
+//         }
+//     }
+
+//     // Десктоп
+//     @media screen and (min-width: 768.1px) {
+
+//         height: 400px;
+//         width: 100%;
+//         max-width: 1600px;
+//         padding-top: 118px;
+//         padding-bottom: 118px;
+//         background-image: linear-gradient(to right,
+//                 rgba(47, 48, 58, 0.4),
+//                 rgba(47, 48, 58, 0.4)),
+//             url('../images/img-hero.jpg'),
+//             linear-gradient(to right,
+//                 $background-color-one,
+//                 $background-color-one);
+//         background-color: $background-color-one ;
+
+//         @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             background-image: linear-gradient(to right,
+//                     rgba(47, 48, 58, 0.4),
+//                     rgba(47, 48, 58, 0.4)),
+//                 url('../images/img-hero@2x.jpg'),
+//                 linear-gradient(to right,
+//                     $background-color-one,
+//                     $background-color-one);
+//             background-color: $background-color-one ;
+
+//         }
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         height: 600px;
+
+//         padding-top: 200px;
+//         padding-bottom: 200px;
+//     }
+
+
+//     margin-left: auto;
+//     margin-right: auto;
+
+
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+// }
+
+.hero {
+    background-color: $background-color-one ;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (max-width: 767.9px) {
+        padding-top: 118px;
+        padding-bottom: 118px;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url('../images/hero-sm.jpg'),
-            linear-gradient(to right,
-                $background-color-one,
-                $background-color-one);
-        background-color: $background-color-one ;
+            url('../images/hero-sm.jpg');
+
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -21,28 +134,21 @@
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(' ../images/hero-sm@2x.jpg '),
-                linear-gradient(to right,
-                    $background-color-one,
-                    $background-color-one);
-            background-color: $background-color-one ;
-
-
+                url(' ../images/hero-sm@2x.jpg ');
         }
     }
 
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-
-        width: 100%;
-        max-width: 768px;
+    @media screen and (min-width: 768px) {
+        height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        // width: 100%;
+        // max-width: 768px;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url('../images/hero-tab.jpg'),
-            linear-gradient(to right,
-                $background-color-one,
-                $background-color-one);
-        background-color: $background-color-one ;
+            url('../images/hero-tab.jpg');
+
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -50,24 +156,18 @@
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url('../images/hero-tab@2x.jpg'),
-                linear-gradient(to right,
-                    $background-color-one,
-                    $background-color-one);
-            background-color: $background-color-one ;
-
-
+                url('../images/hero-tab@2x.jpg');
         }
     }
 
     // Десктоп
-    @media screen and (min-width: 768.1px) {
+    @media screen and (min-width: 1200px) {
 
-        height: 400px;
-        width: 100%;
         max-width: 1600px;
-        padding-top: 118px;
-        padding-bottom: 118px;
+        height: 600px;
+
+        padding-top: 200px;
+        padding-bottom: 200px;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -75,7 +175,7 @@
             linear-gradient(to right,
                 $background-color-one,
                 $background-color-one);
-        background-color: $background-color-one ;
+
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -87,7 +187,7 @@
                 linear-gradient(to right,
                     $background-color-one,
                     $background-color-one);
-            background-color: $background-color-one ;
+
 
         }
     }
@@ -95,18 +195,11 @@
     @media screen and (min-width: 1200px) {
         height: 600px;
 
-        padding-top: 200px;
-        padding-bottom: 200px;
+
     }
 
 
-    margin-left: auto;
-    margin-right: auto;
 
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .hero__title {
