@@ -749,7 +749,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
   .contact__item:first-child .contact__link {
     padding-bottom: 5px;
     padding-top: 20px;
@@ -822,7 +822,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .header__logo {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1145,7 +1145,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768.1px) {
   .hero {
     height: 400px;
     width: 100%;
@@ -1158,7 +1158,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768.1px) and (min-device-pixel-ratio: 2), screen and (min-width: 768.1px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768.1px) and (min-resolution: 192dpi), screen and (min-width: 768.1px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img-hero@2x.jpg), -webkit-gradient(linear, left top, right top, from(#2f303a), to(#2f303a));
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero@2x.jpg), linear-gradient(to right, #2f303a, #2f303a);
@@ -1216,7 +1216,7 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 200;
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1313,7 +1313,7 @@ img {
 
 .modal__closing {
   fill: currentColor;
-  z-index: 50;
+  z-index: 999;
 }
 
 .modal__call {
@@ -1561,7 +1561,7 @@ img {
   padding-bottom: 47px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
   .features {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1587,7 +1587,7 @@ img {
   max-width: 450px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .features__item + .features__item {
     margin-top: 30px;
   }
@@ -1647,7 +1647,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .features__subtitle {
     text-align: center;
   }
@@ -1726,7 +1726,7 @@ img {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1761,7 +1761,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .team__item + .team__item {
     margin-top: 30px;
   }
@@ -1878,7 +1878,7 @@ img {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
   .client {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1914,7 +1914,7 @@ img {
           align-items: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
   .client__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1939,7 +1939,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
   .client__item {
     margin: 15px;
   }
@@ -2146,7 +2146,7 @@ img {
   color: #2196f3;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
   .subscription {
     width: 100%;
   }
@@ -2228,7 +2228,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.9px) {
   .subscription__form-field {
     width: 100%;
   }
@@ -2360,7 +2360,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -4px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .filter {
+    margin: -4px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2378,7 +2383,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
   .filter__item {
     margin: 4px;
   }
@@ -2462,7 +2467,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   .portfolio__item:not(:first-child) {
     margin-top: 30px;
   }

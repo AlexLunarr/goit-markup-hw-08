@@ -8,7 +8,7 @@
 
     background: rgba(0, 0, 0, 0.2);
 
-    z-index: 1;
+    z-index: 200;
     opacity: 1;
 
     transition: opacity $time $cubic,
@@ -100,5 +100,5 @@
 
 .modal__closing {
     fill: currentColor;
-    z-index: 50;
+    z-index: 999;
 }

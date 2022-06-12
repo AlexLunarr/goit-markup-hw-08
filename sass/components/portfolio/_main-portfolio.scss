@@ -29,7 +29,10 @@
     display: flex;
     flex-wrap: wrap;
 
-    margin: -4px;
+    @media screen and (max-width: 767.9px) {
+        margin: -4px;
+    }
+
 
     @media screen and (min-width: 768px) {
         margin-bottom: 30px;
@@ -42,7 +45,7 @@
 }
 
 .filter__item {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767.9px) {
         margin: 4px;
     }
 }
