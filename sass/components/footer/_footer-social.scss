@@ -1,76 +1,79 @@
- 
+ .social {
+     margin-bottom: 60px;
 
-    @media screen and (min-width: 768px){
-        .social {margin-left: auto;}}
-    @media screen and (min-width: 1200px) {
-            .social {
-                        margin-left: 70px;
-                    }
-                }
-                    
+     @media screen and (min-width: 768px) {
 
-                
+         margin-left: auto;
 
-    .call {
-            display: block;
-            text-align: center;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-    
-            margin-bottom: 20px;
-    
-            color: $color-logo-three;
-            @media screen and (min-width: 1200px) {
-                text-align: start;                
-            }
-        }
+     }
+
+     @media screen and (min-width: 1200px) {
+         margin-bottom: 0;
+         margin-left: 70px;
+     }
+ }
 
 
 
 
-.footer__social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-            margin-bottom: 0;
-        }
-    
+ .call {
+     display: block;
+     text-align: center;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
 
-}
+     margin-bottom: 20px;
 
-.footer__link {
+     color: $color-logo-three;
 
-    &:hover,
-    &:focus {
-        background-color: $color-hover;
-    }
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $main-background-color;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-
-    transition: background-color $time $cubic;
-
-}
+     @media screen and (min-width: 1200px) {
+         text-align: start;
+     }
+ }
 
 
-.footer__ellips {
-    &+& {
-        margin-left: 10px;
 
-    }
-}
 
-.footer__icon {
-    fill: currentColor;
-}
+ .footer__social {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+
+
+ }
+
+ .footer__link {
+
+     &:hover,
+     &:focus {
+         background-color: $color-hover;
+     }
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: $main-background-color;
+     background-color: rgba(255, 255, 255, 0.1);
+     border-radius: 50%;
+     width: 44px;
+     height: 44px;
+
+     transition: background-color $time $cubic;
+
+ }
+
+
+ .footer__ellips {
+     &+& {
+         margin-left: 10px;
+
+     }
+ }
+
+ .footer__icon {
+     fill: currentColor;
+ }

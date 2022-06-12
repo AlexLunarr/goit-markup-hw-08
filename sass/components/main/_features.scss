@@ -2,6 +2,11 @@
     padding-top: 94px;
     padding-bottom: 47px;
 
+    @media screen and (max-width: 1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     &__title {
         visibility: hidden;
         position: absolute;
@@ -70,6 +75,10 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .features__text {
