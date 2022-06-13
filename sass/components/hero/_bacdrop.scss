@@ -73,9 +73,10 @@
 
 
 .modal__closing-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    display: block;
 
     position: absolute;
     right: 8px;
@@ -91,6 +92,7 @@
     background: #ffffff;
     transition: color $time $cubic;
     cursor: pointer;
+    color: #000000;
 
     &:hover,
     &:focus {
@@ -101,4 +103,10 @@
 .modal__closing {
     fill: currentColor;
     z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 }
